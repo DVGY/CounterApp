@@ -21,6 +21,7 @@ const CartItems = ({
 }) => {
   return (
     <div className="cartbar-box__item d-flex mb-3 justify-content-center">
+      {console.log('Rendering inside cartItems.jsx')}
       <Badge
         variant={cartCount[id].count > 0 ? 'primary' : 'warning'}
         className="ml-1 ml-sm-3 "
@@ -62,4 +63,4 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   cartCount: state.count,
 });
-export default connect(mapStateToProps, mapDispatchToProps)(CartItems);
+export default React.memo(connect(mapStateToProps, mapDispatchToProps)(CartItems));

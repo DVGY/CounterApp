@@ -4,7 +4,6 @@ const DelSVG = (props) => {
   return (
     <svg
       id="Layer_1"
-      enable-background="new 0 0 512 512"
       viewBox="0 0 512 512"
       fill={props.fill}
       className={props.className}
