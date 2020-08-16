@@ -8,7 +8,7 @@ import { selectTotalCarts } from '../redux/countSelectors';
 
 const CartBar = ({ totalCarts }) => {
   return (
-    <div className="cartbar-box d-flex flex-column">
+    <div className="cartbar-box d-flex flex-column  ">
       {totalCarts.map((el) => (
         <CartItems key={el} id={el} />
       ))}

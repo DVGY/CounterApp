@@ -1,13 +1,18 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { selectTotalItemsInAllCarts } from '../redux/countSelectors';
 
+import CartSVG from '../assets/CartSVG';
+
 const CartTotalCount = ({ totalItemsInAllCarts }) => {
   return (
-    <Navbar bg="dark" variant="dark" className="mb-5">
-      <Navbar.Brand href="#home"> Counter: {totalItemsInAllCarts}</Navbar.Brand>
+    <Navbar bg="dark" variant="dark" className="mb-5 w-25 mx-auto">
+      <Navbar.Brand className="mx-auto">
+        <CartSVG className="cart-svg mr-3" /> {totalItemsInAllCarts}
+      </Navbar.Brand>
     </Navbar>
   );
 };

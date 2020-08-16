@@ -4,7 +4,7 @@ import CartBar from '../src/components/CartBar';
 import CartTotalCount from './components/CartTotalCount';
 function App() {
   return (
-    <div>
+    <div className="App d-flex flex-column justify-content-center">
       <CartTotalCount />
       <CartBar />
     </div>
