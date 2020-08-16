@@ -1,5 +1,6 @@
 .App {
   height: 100vh;
+  min-width: 320px;
 }
 .dec-svg {
   height: 1.5rem;
@@ -8,4 +9,15 @@
 .cart-svg {
   height: 4.5rem;
   width: 4.5rem;
+}
+@media (max-width: 1920px) {
+  .navbar-cart {
+    width: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-cart {
+    width: 100%;
+  }
 }

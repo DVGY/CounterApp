@@ -40,6 +40,23 @@ export const countReducer = (state = INITIAL_STATE, action) => {
         ...newState,
         total: state['total'].filter((el) => el !== action.payload),
       };
+    case counterTypes.RESET:
+      return {
+        ...state,
+        total: ['cartItem1', 'cartItem2', 'cartItem3', 'cartItem4'],
+        cartItem1: {
+          count: 0,
+        },
+        cartItem2: {
+          count: 0,
+        },
+        cartItem3: {
+          count: 0,
+        },
+        cartItem4: {
+          count: 0,
+        },
+      };
 
     default:
       return state;

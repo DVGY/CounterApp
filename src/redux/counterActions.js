@@ -13,3 +13,6 @@ export const deleteCart = (id) => ({
   type: counterTypes.DELETE,
   payload: id,
 });
+export const resetCarts = () => ({
+  type: counterTypes.RESET,
+});

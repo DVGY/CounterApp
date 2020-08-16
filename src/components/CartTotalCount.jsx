@@ -9,7 +9,11 @@ import CartSVG from '../assets/CartSVG';
 
 const CartTotalCount = ({ totalItemsInAllCarts }) => {
   return (
-    <Navbar bg="dark" variant="dark" className="mb-5 w-25 mx-auto">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      className="mb-3 mx-0 mx-sm-auto navbar-cart"
+    >
       <Navbar.Brand className="mx-auto">
         <CartSVG className="cart-svg mr-3" /> {totalItemsInAllCarts}
       </Navbar.Brand>

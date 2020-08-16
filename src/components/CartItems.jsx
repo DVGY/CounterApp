@@ -23,7 +23,7 @@ const CartItems = ({
     <div className="cartbar-box__item d-flex mb-3 justify-content-center">
       <Badge
         variant={cartCount[id].count > 0 ? 'primary' : 'warning'}
-        className="ml-3 "
+        className="ml-1 ml-sm-3 "
       >
         {' '}
         {cartCount[id].count}
@@ -31,21 +31,21 @@ const CartItems = ({
       <Button
         onClick={() => addItemCart(id)}
         variant="secondary"
-        className="ml-3 d-flex"
+        className=" ml-1 ml-sm-3 d-flex"
       >
         Increase
       </Button>
       <Button
         onClick={() => removeItemCart(id)}
         variant="secondary"
-        className="ml-3 d-flex"
+        className="ml-1 ml-sm-3 d-flex"
       >
         Decrease
       </Button>
       <Button
         onClick={() => deleteCart(id)}
         variant="danger"
-        className="ml-3 d-flex"
+        className="ml-1 ml-sm-3 d-flex"
       >
         <DelSVG className="dec-svg mr-1" />
         Delete
