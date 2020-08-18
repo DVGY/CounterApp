@@ -16,7 +16,7 @@ export const selectCartItem2 = createSelector(
 );
 export const selectCartItem3 = createSelector(
   [selectCount],
-  (count) => count.cartItem4
+  (count) => count.cartItem3
 );
 export const selectCartItem4 = createSelector(
   [selectCount],
